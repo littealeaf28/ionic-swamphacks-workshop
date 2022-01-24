@@ -1,0 +1,7 @@
+{
+  "name": "ionic-swamphacks-workshop",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
