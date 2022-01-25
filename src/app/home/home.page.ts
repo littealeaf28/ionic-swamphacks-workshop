@@ -23,4 +23,23 @@ export class HomePage {
 
   constructor() {}
 
+  public deletePost(post) {
+    console.log("deleted post",post);
+
+    // simply remove from array
+
+  }
+
+  public openPost() {
+    console.log("opened post");
+
+    // can implement on your own
+    // navigate to another page to read the post in more detail
+  }
+
+  public addPost() {
+    console.log("add new post");
+
+    // navigate to another page
+  }
 }
