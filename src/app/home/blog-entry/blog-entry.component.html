@@ -1,0 +1,8 @@
+<ion-card *ngIf='blogEntry'>
+  <ion-card-content>
+    <ion-card-title>{{blogEntry.title}}</ion-card-title>
+    <ion-card-subtitle>By {{blogEntry.author}}</ion-card-subtitle>
+    <img [src]="blogEntry.imgSrc"/>
+    <ion-label>{{blogEntry.text}}</ion-label>
+  </ion-card-content>
+</ion-card>
