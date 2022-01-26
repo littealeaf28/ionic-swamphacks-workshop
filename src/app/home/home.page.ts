@@ -23,11 +23,13 @@ export class HomePage {
 
   constructor() {}
 
-  public deletePost(post) {
-    console.log("deleted post",post);
+  public deletePost(targetPost) {
+    console.log("deleted post",targetPost);
 
     // simply remove from array
-
+    this.blogEntries = this.blogEntries.filter((post) => {
+      return post !== targetPost;
+    });
   }
 
   public openPost() {
