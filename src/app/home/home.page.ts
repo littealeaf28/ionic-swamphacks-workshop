@@ -18,6 +18,12 @@ export class HomePage {
       author: "Panda Man Jr.",
       imgSrc: "assets/panda.jpg",
       text: "Pandas are great again!"
+    },
+    { 
+      title: "Cute Panda 2",
+      author: "Panda Man Jr.",
+      imgSrc: "assets/panda.jpg",
+      text: "Pandas are great again!"
     }
   ]
 
