@@ -11,6 +11,7 @@ import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera
   styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent implements OnInit {
+  public photos: UserPhoto[] = [];
 
   constructor() { }
 
@@ -28,5 +29,15 @@ export class GalleryComponent implements OnInit {
       source: CameraSource.Camera,
       quality: 100
     });
+
+    this.photos.unshift({
+      filepath: "soon...",
+      webviewPath: capturedPhoto.webPath
+    });
   }
+}
+
+export interface UserPhoto {
+  filepath: string;
+  webviewPath: string;
 }
