@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { BlogEntryComponent } from './blog-entry/blog-entry.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
 
@@ -18,7 +17,6 @@ import { GalleryComponent } from './gallery/gallery.component';
   ],
   declarations: [
     HomePage,
-    BlogEntryComponent,
     GalleryComponent
   ]
 })
