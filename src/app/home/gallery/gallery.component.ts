@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 /** CAMERA IMPORT - CAN MOVE TO SERVICE */
 import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
@@ -13,12 +14,16 @@ import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera
 export class GalleryComponent implements OnInit {
   public photos: UserPhoto[] = [];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
 
   addPhotoToGallery() {
     this.addNewToGallery();
+  }
+
+  public back() {
+    this.router.navigate(['/home']);
   }
 
   /** CAMERA FUNCTIONALITY - CAN ALSO MOVE INTO A SERVICE */

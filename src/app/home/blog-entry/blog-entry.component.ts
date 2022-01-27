@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-blog-entry',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-entry.component.scss'],
 })
 export class BlogEntryComponent implements OnInit {
+  @Input() blogEntry: any;
 
   constructor() { }
 
