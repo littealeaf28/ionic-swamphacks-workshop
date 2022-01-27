@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddBlogEntryComponent } from './add-blog-entry/add-blog-entry.component';
+import { GalleryComponent } from './gallery/gallery.component';
 import { HomePage } from './home.page';
 
 const routes: Routes = [
@@ -9,8 +9,8 @@ const routes: Routes = [
     component: HomePage,
   },
   {
-    path: 'add-blog-entry',
-    component: AddBlogEntryComponent,
+    path: 'gallery',
+    component: GalleryComponent,
   }
 ];
 

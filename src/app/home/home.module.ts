@@ -6,7 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { BlogEntryComponent } from './blog-entry/blog-entry.component';
-import { AddBlogEntryComponent } from './add-blog-entry/add-blog-entry.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 @NgModule({
@@ -19,7 +19,7 @@ import { AddBlogEntryComponent } from './add-blog-entry/add-blog-entry.component
   declarations: [
     HomePage,
     BlogEntryComponent,
-    AddBlogEntryComponent
+    GalleryComponent
   ]
 })
 export class HomePageModule {}
